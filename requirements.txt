@@ -1,0 +1,19 @@
+# Election Simulator 3000
+# ...and its dependencies.
+
+elsim
+numpy
+scipy
+
+# Speedups
+numba
+joblib
+
+# Visualization
+matplotlib
+seaborn
+
+# Data handling
+pandas
+# ...and logging
+tabulate
