@@ -63,7 +63,7 @@ def run_indonesian_election(voters, candidates, candidate_names, noise=0.05):
     top_two_names = [r1_results[0][0], r1_results[1][0]]
 
     r2_utilities = utilities[:, top_two_indices]
-    r2_counts, r2_pcts = simulate_round(r2_utilites)
+    r2_counts, r2_pcts = simulate_round(r2_utilities)
 
     r2_results = sorted(
         zip(top_two_names, r2_pcts),
