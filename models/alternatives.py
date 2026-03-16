@@ -13,7 +13,7 @@ def run_borda_count(voters, candidates, candidate_names, noise=0.05):
     rankings = get_ranked_ballots(utilities)
 
     n_voters, n_candidates = rankings.shape
-    scors = np.zeros(n_candidates)
+    scores = np.zeros(n_candidates)
 
     print("\nBorda Count Election")
     for rank in range(n_candidates):

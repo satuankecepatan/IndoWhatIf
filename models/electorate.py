@@ -33,7 +33,7 @@ def generate_pancasila_voters_bimodal(n_voters=100000, polarization_dist=0.25, s
         np.random.seed(seed)
     
     n_camp1 = n_voters // 2
-    n_camp2 - n_voters - n_camp1
+    n_camp2 = n_voters - n_camp1
 
     # camp1 is the Prabowo base
     camp1 = np.random.normal(
