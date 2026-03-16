@@ -18,7 +18,7 @@ def calculate_utilities(voters, candidates, noise_level=0.0):
 
 def simulate_round(utilities):
     n_voters = utilities.shape[0]
-    votes = np.argmax(utilites, axis=1) # each voter picks the candidate with highest utility
+    votes = np.argmax(utilities, axis=1) # each voter picks the candidate with highest utility
     vote_counts = np.bincount(votes, minlength=utilities.shape[1])
     vote_percentages = (vote_counts / n_voters) * 100
     return vote_counts, vote_percentages
